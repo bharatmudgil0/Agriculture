@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate") -%>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <br><br>
+    <h1>Create a New Post for Demand</h1>
+    <form method="POST" action="/listings/demand" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="demand[title]" placeholder="Enter the title" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="demand[description]" placeholder="Enter Description" class="form-control" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Image</label>
+            <input type="file" name="demand[image]" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input name="demand[quantity]" placeholder="Enter quantity" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input name="demand[price]" placeholder="Enter price Above MSP" class="form-control" required>
+        </div>
+        <div class="row">
+            <div class="mb-3 col-md-5">
+                <label for="State" class="form-label">State</label>
+                <input type="text" name="demand[state]" placeholder="Enter State" class="form-control" required>
+            </div>
+            <div class="mb-3 col-md-7">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="demand[country]" placeholder="Enter country" class="form-control" required>
+            </div>
+        </div>
+        <button class="btn btn-dark add-btn">Add</button>
+    </form>
+    
+    
+</div>
+</div>
+</body>
